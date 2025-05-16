@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '编程'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('InfoQ 中文', 'https://plink.anyfeeder.com/infoq/recommend'),
+        ('Readhub / 开发者资讯', 'https://plink.anyfeeder.com/readhub/technews'),
+        ('Linux 中国', 'https://plink.anyfeeder.com/linux.cn'),
+        ('开发者头条', 'https://plink.anyfeeder.com/toutiao.io'),
+        ('FreeBuf 关注黑客', 'https://plink.anyfeeder.com/freebuf'),
+    ]

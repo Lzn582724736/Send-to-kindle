@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '外国媒体'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Aljazeera半岛网 / 新闻', 'https://plink.anyfeeder.com/aljazeera/news'),
+        ('SBS 中文', 'https://plink.anyfeeder.com/sbs/chinese'),
+        ('VOA 美国之音', 'https://plink.anyfeeder.com/voa/chinese'),
+        ('端传媒 / 最新', 'https://plink.anyfeeder.com/initium/latest'),
+        ('端传媒 / 深度', 'https://plink.anyfeeder.com/initium/feature'),
+        ('路透中文', 'https://plink.anyfeeder.com/reuters/cn'),
+        ('华尔街日报中文版', 'https://plink.anyfeeder.com/wsj/cn'),
+        ('纽约时报中文网', 'https://plink.anyfeeder.com/nytimes/cn'),
+        ('BBC 中文版', 'https://plink.anyfeeder.com/bbc/cn'),
+        ('RFI 法国国际广播电台', 'https://plink.anyfeeder.com/rfi/cn'),
+        ('ABC 澳大利亚广播公司', 'https://plink.anyfeeder.com/abc/cn'),
+        ('纽约时报双语版', 'https://plink.anyfeeder.com/nytimes/dual'),
+    ]

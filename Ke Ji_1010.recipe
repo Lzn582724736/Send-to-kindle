@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '科技'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Solidot', 'https://www.solidot.org/index.rss'),
+        ('数字尾巴', 'https://plink.anyfeeder.com/dgtle'),
+        ('36氪', 'https://plink.anyfeeder.com/36kr'),
+        ('cnBeta', 'https://plink.anyfeeder.com/cnbeta'),
+        ('IT 之家', 'https://plink.anyfeeder.com/ithome/it'),
+        ('MIT 科技评论 / 本周热榜', 'https://plink.anyfeeder.com/mittrchina/hot'),
+        ('Readhub / 热门话题', 'https://plink.anyfeeder.com/readhub/topic'),
+        ('Readhub / 每日早报', 'https://plink.anyfeeder.com/readhub/daily'),
+        ('Readhub / 区块链快讯', 'https://plink.anyfeeder.com/readhub/blockchain'),
+        ('爱范儿', 'https://plink.anyfeeder.com/ifanr'),
+        ('果壳网 / 科学人', 'https://plink.anyfeeder.com/guokr/scientific'),
+        ('虎嗅', 'https://plink.anyfeeder.com/huxiu'),
+        ('机核', 'https://plink.anyfeeder.com/gcores'),
+        ('快科技', 'https://plink.anyfeeder.com/mydrivers'),
+        ('雷峰网', 'https://plink.anyfeeder.com/leiphone'),
+        ('软餐 - 新鲜软件资讯', 'https://plink.anyfeeder.com/ruancan'),
+        ('少数派', 'https://plink.anyfeeder.com/sspai'),
+        ('少数派 / Matrix', 'https://plink.anyfeeder.com/ssapi/matrix'),
+        ('新浪专栏 / 创事记', 'https://plink.anyfeeder.com/sina/csj'),
+        ('极客公园', 'https://plink.anyfeeder.com/geekpark'),
+        ('小众软件', 'https://plink.anyfeeder.com/appinn'),
+        ('超能网', 'https://plink.anyfeeder.com/expreview'),
+        ('钛媒体', 'https://plink.anyfeeder.com/tmtpost'),
+        ('猎云网', 'https://plink.anyfeeder.com/lieyunwang'),
+        ('品玩', 'https://plink.anyfeeder.com/pingwest'),
+        ('湾区日报', 'https://wanqu.co/feed/'),
+        ('晚晴幽草轩', 'https://www.jeffjade.com/atom.xml'),
+        ('阮一峰的网络日志', 'https://www.ruanyifeng.com/blog/atom.xml'),
+    ]

@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = 'News'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('CGTN: Top News', 'https://plink.anyfeeder.com/cgtn/top'),
+        ('CGTN: Opinions', 'https://plink.anyfeeder.com/cgtn/opinions'),
+        ("CGTN: Editors' Pick", 'https://plink.anyfeeder.com/cgtn/pick'),
+        ('Sixth Tone', 'https://plink.anyfeeder.com/sixthtone'),
+        ('BBC / Top Stories', 'https://plink.anyfeeder.com/bbc'),
+        ('BBC / World', 'https://plink.anyfeeder.com/bbc/world'),
+        ('BBC / UK', 'https://plink.anyfeeder.com/bbc/uk'),
+        ('BBC / Business', 'https://plink.anyfeeder.com/bbc/business'),
+        ('BBC / politics', 'https://plink.anyfeeder.com/bbc/politics'),
+        ('BBC / Health', 'https://plink.anyfeeder.com/bbc/health'),
+        ('BBC / Education & Family', 'https://plink.anyfeeder.com/bbc/education'),
+        ('BBC / Science & Environment', 'https://plink.anyfeeder.com/bbc/science_and_environment'),
+        ('BBC / Technology', 'https://plink.anyfeeder.com/bbc/technology'),
+        ('BBC / Entertainment & Arts', 'https://plink.anyfeeder.com/bbc/entertainment_and_arts'),
+        ('Economist / Leaders', 'https://plink.anyfeeder.com/economist/leaders'),
+        ('Economist / Briefing', 'https://plink.anyfeeder.com/economist/briefing'),
+        ('Economist / United States', 'https://plink.anyfeeder.com/economist/us-politics'),
+        ('Economist / The Americas', 'https://plink.anyfeeder.com/economist/americas'),
+        ('Economist / Asia', 'https://plink.anyfeeder.com/economist/asia'),
+        ('Economist / China', 'https://plink.anyfeeder.com/economist/china-politics'),
+        ('Economist / Middle East & Africa', 'https://plink.anyfeeder.com/economist/middle-east-africa'),
+        ('Economist / Europe', 'https://plink.anyfeeder.com/economist/europe'),
+        ('Economist / Britain', 'https://plink.anyfeeder.com/economist/britain'),
+        ('Economist / International', 'https://plink.anyfeeder.com/economist/international'),
+        ('Economist / Business', 'https://plink.anyfeeder.com/economist/business-finance'),
+        ('Economist / Finance & economics', 'https://plink.anyfeeder.com/economist/economics'),
+        ('Economist / Science & technology', 'https://plink.anyfeeder.com/economist/science-technology'),
+        ('Economist / Culture', 'https://plink.anyfeeder.com/economist/culture'),
+        ('The New Yorker / News', 'https://plink.anyfeeder.com/newyorker/news'),
+        ('The New Yorker / Culture', 'https://plink.anyfeeder.com/newyorker/culture'),
+        ('The New Yorker / Humor', 'https://plink.anyfeeder.com/newyorker/humor'),
+        ('TIME', 'https://plink.anyfeeder.com/time'),
+        ('Motherboard', 'https://plink.anyfeeder.com/vice/motherboard'),
+        ('ZeroHedge', 'https://plink.anyfeeder.com/zerohedge'),
+        ('Business Insider', 'https://plink.anyfeeder.com/businessinsider'),
+        ('Gawker', 'https://plink.anyfeeder.com/gawker'),
+        ('The Atlantic', 'https://plink.anyfeeder.com/theatlantic'),
+        ('Vice', 'https://plink.anyfeeder.com/vice'),
+        ('WIRED / Top Stories', 'https://plink.anyfeeder.com/wired/top-stories'),
+        ('WIRED / Business', 'https://plink.anyfeeder.com/wired/business'),
+        ('WIRED / Artificial Intelligence', 'https://plink.anyfeeder.com/wired/ai'),
+        ('WIRED / Culture', 'https://plink.anyfeeder.com/wired/culture'),
+        ('WIRED / Tech', 'https://plink.anyfeeder.com/wired/gear'),
+        ('WIRED / Ideas', 'https://plink.anyfeeder.com/wired/ideas'),
+        ('WIRED / Science', 'https://plink.anyfeeder.com/wired/science'),
+        ('WIRED / Security', 'https://plink.anyfeeder.com/wired/security'),
+        ('WIRED / Backchannel', 'https://plink.anyfeeder.com/wired/backchannel'),
+    ]

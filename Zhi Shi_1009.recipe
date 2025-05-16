@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '知识'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('知乎日报', 'https://plink.anyfeeder.com/zhihu/daily'),
+        ('知乎每日精选', 'http://www.zhihu.com/rss'),
+        ('简书 / 首页', 'https://plink.anyfeeder.com/jianshu/home'),
+        ('简书: 热门', 'https://plink.anyfeeder.com/jianshu/trending/weekly'),
+        ('知乎热榜', 'https://plink.anyfeeder.com/zhihu/hotlist'),
+        ('人人都是产品经理', 'https://plink.anyfeeder.com/woshipm/popular'),
+        ('维基百科优良条目', 'https://zh.wikipedia.org/w/api.php?action=featuredfeed&feed=good&feedformat=atom'),
+        ('BBC 英语教学', 'https://plink.anyfeeder.com/bbc/learningenglish'),
+        ('观止·每日一文', 'https://plink.anyfeeder.com/meiriyiwen'),
+    ]

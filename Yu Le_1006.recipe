@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '娱乐'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('豆瓣最受欢迎的影评', 'https://plink.anyfeeder.com/douban/review/movie'),
+        ('豆瓣最受欢迎的书评', 'https://plink.anyfeeder.com/douban/review/book'),
+    ]

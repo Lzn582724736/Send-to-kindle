@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '新闻'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('喷嚏图卦', 'https://plink.anyfeeder.com/pentitugua'),
+        ('iDaily 每日环球视野', 'https://plink.anyfeeder.com/idaily/today'),
+        ('抽屉新热榜', 'https://plink.anyfeeder.com/chouti/hot'),
+        ('求是网', 'https://plink.anyfeeder.com/qstheory'),
+        ('网易新闻 / 今日关注', 'https://plink.anyfeeder.com/netease/today'),
+        ('新华网 / 新华社新闻', 'https://plink.anyfeeder.com/newscn/whxw'),
+        ('联合早报 / 中国', 'https://plink.anyfeeder.com/zaobao/realtime/china'),
+        ('联合早报 / 国际', 'https://plink.anyfeeder.com/zaobao/realtime/world'),
+        ('南方周末 / 新闻', 'https://plink.anyfeeder.com/infzm/news'),
+        ('南方周末 / 推荐', 'https://plink.anyfeeder.com/infzm/recommends'),
+        ('澎湃新闻', 'https://plink.anyfeeder.com/thepaper'),
+        ('人民网 / 头条', 'https://plink.anyfeeder.com/people'),
+        ('人民网 / 国内新闻', 'https://plink.anyfeeder.com/people/politics'),
+        ('人民网 / 国际新闻', 'https://plink.anyfeeder.com/people/world'),
+        ('人民网 / 英语新闻', 'https://plink.anyfeeder.com/people/english'),
+        ('新京报', 'https://plink.anyfeeder.com/bjnews'),
+        ('人民日报', 'https://plink.anyfeeder.com/people-daily'),
+        ('光明日报', 'https://plink.anyfeeder.com/guangmingribao'),
+        ('解放军报', 'https://plink.anyfeeder.com/jiefangjunbao'),
+        ('中国日报 / 双语新闻', 'https://plink.anyfeeder.com/chinadaily/dual'),
+        ('中国日报 / 专栏', 'https://plink.anyfeeder.com/chinadaily/column'),
+        ('中国日报 / 时政', 'https://plink.anyfeeder.com/chinadaily/china'),
+        ('中国日报 / 资讯', 'https://plink.anyfeeder.com/chinadaily/world'),
+        ('中国日报 / 财经', 'https://plink.anyfeeder.com/chinadaily/caijing'),
+        ('喷嚏网 / 铂程斋', 'https://plink.anyfeeder.com/dapenti/xilei'),
+        ('腾讯新闻 / 国际', 'https://plink.anyfeeder.com/qq/news/world'),
+        ('腾讯新闻 / 国内', 'https://plink.anyfeeder.com/qq/news/china'),
+        ('界面新闻: 新闻', 'https://plink.anyfeeder.com/jiemian/news'),
+    ]
