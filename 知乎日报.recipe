@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747452595(AutomaticNewsRecipe):
+    title          = '知乎日报'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('知乎日报', 'https://feedx.net/rss/zhihudaily.xml'),
+    ]
