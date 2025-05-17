@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1747434458(AutomaticNewsRecipe):
+    title          = '财经'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('雪球 / 今日话题', 'https://plink.anyfeeder.com/xueqiu/today'),
+        ('雪球 / 热帖', 'https://plink.anyfeeder.com/xueqiu/hot'),
+        ('财富中文网', 'https://plink.anyfeeder.com/fortunechina'),
+        ('财富中文网 / 商业', 'https://plink.anyfeeder.com/fortunechina/shangye'),
+        ('财富中文网 / 领导力', 'https://plink.anyfeeder.com/fortunechina/lindgaoli'),
+        ('财富中文网 / 科技', 'https://plink.anyfeeder.com/fortunechina/keji'),
+        ('财富中文网 / 研究', 'https://plink.anyfeeder.com/fortunechina/report'),
+        ('经济日报', 'https://plink.anyfeeder.com/jingjiribao'),
+        ('喷嚏网 / 财经风云', 'https://plink.anyfeeder.com/dapenti/caijing'),
+        ('经济观察网', 'https://plink.anyfeeder.com/eeo'),
+        ('界面新闻: 商业', 'https://plink.anyfeeder.com/jiemian/business'),
+        ('界面新闻: 财经', 'https://plink.anyfeeder.com/jiemian/finance'),
+    ]
